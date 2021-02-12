@@ -4,7 +4,7 @@
 (define exclusion-mark-attr '(decode "exclude"))
 (define (root . elems)
 	(decode `(decoded-root ,@elems)
-          #:txexpr-elements-proc detect-paragraphs 
+          #:txexpr-elements-proc decode-paragraphs 
           #:string-proc (compose1 smart-quotes smart-dashes)
           #:exclude-tags '(pre)
           #:exclude-attrs (list exclusion-mark-attr)))

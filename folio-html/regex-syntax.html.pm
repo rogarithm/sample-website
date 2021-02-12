@@ -16,7 +16,7 @@ Programs that accept regular expressions must first ◊uc{evaluate} the ◊uc{sy
 
 ◊bold{Metacharacters}
 
-There's several metacharacters which have special meaning when used as a regular expression. The dot (.) is used to match any single character. The asterisk (*) is used to match zero or more occurrences of the ◊strong{preceding} regular expression. When using the asterisk in shell, the meaning slightly differs; it can match zero or more any characters without preceding expression. Thus, if you want to express * in sed as the same meanig of * in the bash command like "ls *", you need to use ".*".
+There's several metacharacters which have special meaning when used as a regular expression. The dot (.) is used to match any single character. The asterisk (*) is used to match zero or more occurrences of the ◊strong{preceding} regular expression. When using the asterisk in shell, the meaning slightly differs; it can match zero or more any characters without preceding expression. Thus, if you want to express * in sed as the same meanig of * in the bash command like ◊code{ls *}, you need to use ".*".
 
 ◊section{A Line-up of Characters}
 
