@@ -22,7 +22,7 @@ body {
     margin-left:auto; ◊; this will give the content in the center.
     margin-right:auto;
     width:100%;
-    ◊;max-width:1000px;
+    max-width:1000px;
 }
 
 ◊(define default-margin-left 8)
@@ -44,7 +44,7 @@ body {
 }
 }
 
-◊(define default-horiz-block-metrics(format "
+◊(define default-horiz-block-metrics (format "
 			margin-left: ~arem;
 			width: ~arem;
 			margin-right: ~arem;" default-margin-left default-width default-margin-right))
@@ -61,7 +61,7 @@ body {
 
 ◊|section-tag| {
   ◊|default-horiz-block-metrics|
-  font-family: charter;
+  font-family: fira-sans;
   font-size: 1.2rem;
   line-height: 1.2;
   padding-top: 0.7rem;
@@ -87,13 +87,14 @@ p {
 	margin-bottom: 0.8rem;
 }
 
-◊|code-tag|.◊|code-class|, ◊|codeblock-tag|.◊|code-class|{
+◊|code-tag|{
   ◊|default-horiz-block-metrics|
-  font-family: fira-mono;
+  font-family: fira-mono, sans-serif;
 	font-size: 1rem;
-	line-height: 1.2;
-	padding-top: 0.7rem;
-	padding-bottom: 0.3rem;
+	margin-bottom: 0.8rem;
+◊; line-height: 1.2;
+◊;	padding-top: 0.7rem;
+◊;	padding-bottom: 0.3rem;
 }
 
 ◊|uncertain-tag| {

@@ -12,7 +12,8 @@ body {
     margin: 0;
     margin-left:auto; margin-right:auto;
     width:100%;
-    }
+    max-width:1000px;
+}
 
 
 
@@ -41,7 +42,7 @@ h2 {
 			margin-left: 8rem;
 			width: 30rem;
 			margin-right: 4rem;
-  font-family: charter;
+  font-family: fira-sans;
   font-size: 1.2rem;
   line-height: 1.2;
   padding-top: 0.7rem;
@@ -73,16 +74,14 @@ p {
         margin-bottom: 0.8rem;
 }
 
-span.code, pre.code{
+code{
   
 			margin-left: 8rem;
 			width: 30rem;
 			margin-right: 4rem;
-  font-family: fira-mono;
+  font-family: fira-mono, sans-serif;
         font-size: 1rem;
-        line-height: 1.2;
-        padding-top: 0.7rem;
-        padding-bottom: 0.3rem;
+        margin-bottom: 0.8rem;
 }
 
 em {

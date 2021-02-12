@@ -3,7 +3,7 @@
 
 (define exclusion-mark-attr '(decode "exclude"))
 (define (root . elems)
-	(decode `(root ,@elems)
+	(decode `(decoded-root ,@elems)
           #:txexpr-elements-proc detect-paragraphs 
           #:string-proc (compose1 smart-quotes smart-dashes)
           #:exclude-tags '(pre)
@@ -14,14 +14,10 @@
 
 (provide (all-defined-out))
 
-(define code-tag 'span)
+(define code-tag 'code)
 (define code-class "code")
 (define (code . elems)
   `(,code-tag ((class ,code-class) ,exclusion-mark-attr) ,@elems))
-
-(define codeblock-tag 'pre)
-(define (codeblock . elems)
-  `(,codeblock-tag ((class ,code-class)) ,@elems))
 
 (define title-tag 'h1)
 (define (title . elems)
