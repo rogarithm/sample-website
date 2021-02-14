@@ -39,9 +39,10 @@ body {
     line-height: 1.4;
 }
 
-◊(define default-margin-left 8)
+
+◊(define default-margin-left 4)
 ◊(define default-margin-right 4)
-◊(define default-width 30)
+◊(define default-width 33)
 
 ◊(define default-horiz-block-metrics (format "
 			margin-left: ~arem;
@@ -51,8 +52,8 @@ body {
 ◊|title-tag| {
     ◊|default-horiz-block-metrics|
     font-family: cooperhewitt-book;
-    font-size: 2rem;
-    line-height: 1.1;
+    font-size: 1.5rem;
+    line-height: 1.2;
     width: 24rem;
     margin-top: 0.25rem;
     margin-bottom: 1.5rem;
@@ -61,10 +62,10 @@ body {
 ◊|section-tag| {
   ◊|default-horiz-block-metrics|
   font-family: cooperhewitt-book;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.2;
   padding-top: 0.7rem;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.8rem;
 }
 
 ◊|subsection-tag| {
@@ -98,18 +99,20 @@ pre code {
     font:12px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace
 }
 }
+
 ◊|code-tag|{
-  font-family: sourcecodepro-light, monospace;
-	font-size: 1rem;
-	margin-bottom: 0.8rem;
-◊; line-height: 1.2;
-◊;	padding-top: 0.7rem;
-◊;	padding-bottom: 0.3rem;
-  border-radius: 5px; 
-  -moz-border-radius: 5px; 
-  -webkit-border-radius: 5px; 
+	margin-bottom: 1rem;
+  border-radius: 4px; 
   border: 1px solid #BCBEC0;
-  padding: 2px;
+  padding: 0.1em;
+  ◊;width: 88%;
+  font-family: sourcecodepro-light, monospace;
+	font-size: 0.85rem;
+  background: #fcfcfc;
+  color: #666;
+  ◊; line-height: 1.2;
+  ◊;	padding-top: 0.7rem;
+  ◊;	padding-bottom: 0.3rem;
 }
 
 ◊|uncertain-tag| {

@@ -1,10 +1,12 @@
 #lang racket/base
 (require pollen/decode)
+(require (submod hyphenate safe))
 
 (define exclusion-mark-attr '(decode "exclude"))
 (define (root . elems)
 	(decode `(decoded-root ,@elems)
           #:txexpr-elements-proc decode-paragraphs 
+					#:block-txexpr-proc (compose1 hyphenate wrap-hanging-quotes)
           #:string-proc (compose1 smart-quotes smart-dashes)
           #:exclude-tags '(pre)
           #:exclude-attrs (list exclusion-mark-attr)))
@@ -13,6 +15,9 @@
 ; tag functions
 
 (provide (all-defined-out))
+
+(define (link url . text)
+  `(a ((href ,url)) ,@text))
 
 (define code-tag 'code)
 (define code-class "code")

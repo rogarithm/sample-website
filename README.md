@@ -2,4 +2,4 @@
 
 * Walkthrough of the https://www.learnenough.com/html-tutorial/
 
-* Site location: https://rogarithm.github.io/sample-website/
+* Site location: https://rogarithm.github.io/sample-website/folio-html/regex-syntax.html
