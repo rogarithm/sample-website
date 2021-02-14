@@ -1,5 +1,10 @@
 # sample-website
 
-* Walkthrough of the https://www.learnenough.com/html-tutorial/
+* Site location: https://rogarithm.github.io/sample-website/accuracy.html
 
-* Site location: https://rogarithm.github.io/sample-website/folio-html/regex-syntax.html
+This site uses [Pollen](https://github.com/mbutterick/pollen) language to preprocess files. If you want to see source, see these files:
+
+`accuracy.html.pm`
+`pollen.rkt`
+`styles.css.pp`
+`template.html`
