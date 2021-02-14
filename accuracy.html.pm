@@ -30,10 +30,10 @@ In this book, reuse is the same as single source approach.
 
 Parts (that is, ◊uc{topic}) of source can be used in multiple documents. When you need an update, editing only source helps to improve consistency and time consuming.
 
-◊section{Reuse information when possible}
-
-usecases. For detail, see p79.
-
+◊; ◊section{Reuse information when possible}
+◊; 
+◊; usecases. For detail, see p79.
+◊; 
 ◊section{Avoid introducting inconsistencies and eliminate those that you find}
 
 There's information that cannot be reused. You must synchronize them. To be effective, minimize the number of repeated information through multiple documents.
@@ -48,4 +48,4 @@ Headings or names of elements should be consistent with their content of the top
 
 Typographical and grammar errors break users' trust about the document. You can eaily find and correct these errors by using automated tools. Choose a proper tool and use carefully.
 
-◊section{Check the accuracy of references to related information.}
+◊; ◊section{Check the accuracy of references to related information.}
